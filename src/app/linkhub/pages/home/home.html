@@ -34,7 +34,12 @@
 
     <div class="social__links">
       @for (item of socialLinks(); track $index) {
-      <a [href]="item.url" target="_blank" class="social__link">
+      <a
+        [href]="item.url"
+        target="_blank"
+        class="social__link"
+        [ariaLabel]="'Visita nuestro' + item.title"
+      >
         <tui-icon [icon]="'@tui.' + item.icon"></tui-icon>
       </a>
       }
