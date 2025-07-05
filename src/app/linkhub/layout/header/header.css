@@ -1,8 +1,11 @@
 .header__component {
-  width: 100%;
+  width: 95%;
+  max-width: 800px;
   display: flex;
   justify-content: space-between;
   align-items: center;
+  margin: 0 auto;
+  padding: 0.5rem 1rem;
 
   img {
     width: 70px;

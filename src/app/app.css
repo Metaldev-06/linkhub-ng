@@ -1,4 +1,4 @@
-app-header {
+/* app-header {
   width: 95%;
   max-width: 800px;
   margin: 0 auto;
@@ -10,7 +10,7 @@ app-header {
   animation-timeline: scroll(root block);
   animation-range: 0 200px;
   z-index: 1000;
-}
+} */
 
 main {
   width: 100%;
