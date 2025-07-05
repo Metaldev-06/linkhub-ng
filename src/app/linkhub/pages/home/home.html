@@ -1,0 +1,61 @@
+<section class="home__component">
+  <article class="home__header">
+    <h1>Diaz Servicios S.R.L</h1>
+    <h2>
+      Consecionario Oficial
+      <a href="https://www.aca.org.ar/" target="_blank">ACA</a>
+    </h2>
+  </article>
+
+  <article class="home__body">
+    <div class="home__redirections">
+      @if (redirects.loading()) { @for (item of [1, 2, 3, 4, 5, 6]; track
+      $index) {
+      <button class="skeleton">&zwnj;</button>
+      } } @else { @for (item of redirects.getLinks(); track item.id) { @if
+      (item.button) {
+      <button class="link__button" (click)="openDialog(template)">
+        <span>{{item.icon}}</span>
+        <span>{{item.title}}</span>
+      </button>
+      } @else {
+      <a [href]="item.url" target="_blank" class="link__button">
+        <span>{{item.icon}}</span>
+        <span>{{item.title}}</span>
+      </a>
+      } }
+
+      <button class="link__button" [routerLink]="['/credentials-wifi']">
+        <span>🛜</span>
+        <span>Accede al WIFI</span>
+      </button>
+      }
+    </div>
+
+    <div class="social__links">
+      @for (item of socialLinks(); track $index) {
+      <a [href]="item.url" target="_blank" class="social__link">
+        <tui-icon [icon]="'@tui.' + item.icon"></tui-icon>
+      </a>
+      }
+    </div>
+  </article>
+
+  <div class="hero__image"></div>
+</section>
+
+<ng-template #template let-observer>
+  <div class="dialog__content">
+    @for (item of downloadApp(); track item.id) {
+    <a
+      (click)="observer.complete()"
+      [href]="item.url"
+      target="_blank"
+      class="link__button"
+    >
+      <span>{{item.icon}}</span>
+      <span>{{item.title}}</span>
+    </a>
+    }
+  </div>
+</ng-template>

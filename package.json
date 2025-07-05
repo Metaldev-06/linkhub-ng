@@ -1,0 +1,51 @@
+{
+  "name": "linkhub",
+  "version": "0.0.0",
+  "scripts": {
+    "ng": "ng",
+    "start": "ng serve",
+    "build": "ng build",
+    "watch": "ng build --watch --configuration development",
+    "test": "ng test"
+  },
+  "private": true,
+  "dependencies": {
+    "@angular/cdk": "^20.0.5",
+    "@angular/common": "^20.0.0",
+    "@angular/compiler": "^20.0.0",
+    "@angular/core": "^20.0.0",
+    "@angular/fire": "^20.0.1",
+    "@angular/forms": "^20.0.0",
+    "@angular/platform-browser": "^20.0.0",
+    "@angular/router": "^20.0.0",
+    "@taiga-ui/addon-charts": "^4.43.0",
+    "@taiga-ui/addon-commerce": "^4.43.0",
+    "@taiga-ui/addon-doc": "^4.43.0",
+    "@taiga-ui/addon-mobile": "^4.43.0",
+    "@taiga-ui/addon-table": "^4.43.0",
+    "@taiga-ui/cdk": "^4.43.0",
+    "@taiga-ui/core": "^4.43.0",
+    "@taiga-ui/event-plugins": "^4.0.2",
+    "@taiga-ui/icons": "^4.43.0",
+    "@taiga-ui/kit": "^4.43.0",
+    "@taiga-ui/layout": "^4.43.0",
+    "dotenv": "^17.0.1",
+    "less": "^4.3.0",
+    "prettier": "^3.6.2",
+    "rxjs": "~7.8.0",
+    "tslib": "^2.3.0"
+  },
+  "devDependencies": {
+    "@angular/build": "^20.0.1",
+    "@angular/cli": "^20.0.1",
+    "@angular/compiler-cli": "^20.0.0",
+    "@types/jasmine": "~5.1.0",
+    "jasmine-core": "~5.7.0",
+    "karma": "~6.4.0",
+    "karma-chrome-launcher": "~3.2.0",
+    "karma-coverage": "~2.2.0",
+    "karma-jasmine": "~5.1.0",
+    "karma-jasmine-html-reporter": "~2.1.0",
+    "typescript": "~5.8.2"
+  }
+}

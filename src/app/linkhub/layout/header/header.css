@@ -1,0 +1,18 @@
+.header__component {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  img {
+    width: 70px;
+    height: auto;
+    object-fit: contain;
+    border-radius: 50%;
+    cursor: pointer;
+  }
+
+  img:nth-child(2) {
+    width: 50px;
+  }
+}
