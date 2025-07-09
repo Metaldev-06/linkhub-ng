@@ -6,10 +6,11 @@ import type { PolymorpheusContent } from '@taiga-ui/polymorpheus';
 
 import { SocialLink } from '../../../core/interfaces/social-link.interface';
 import { Redirects } from '../../../core/services/redirects';
+import { NgOptimizedImage } from '@angular/common';
 
 @Component({
   selector: 'app-home',
-  imports: [TuiIcon, RouterLink],
+  imports: [TuiIcon, RouterLink, NgOptimizedImage],
   templateUrl: './home.html',
   styleUrl: './home.css',
 })
